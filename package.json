@@ -4,7 +4,7 @@
   "publisher": "rcthakuri",
   "icon": "assets/terminal-pilot-icon.webp",
   "description": "",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -51,6 +51,10 @@
   "repository": {
     "type": "git",
     "url": " https://github.com/rcthakuri/terminal-pilot"
+  },
+  "homepage": "https://github.com/rcthakuri/terminal-pilot#readme",
+  "bugs": {
+    "url": "https://github.com/rcthakuri/terminal-pilot/issues"
   },
   "license": "MIT",
   "scripts": {
