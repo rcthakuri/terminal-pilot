@@ -48,3 +48,4 @@ Add your terminal settings to your `settings.json`:
 
 1. Github Repository: https://github.com/rcthakuri/terminal-pilot#readme
 2. Bug report: https://github.com/rcthakuri/terminal-pilot/issues
+3. Visual Studio Marketplace: https://marketplace.visualstudio.com/items?itemName=rcthakuri.terminal-pilot&ssr=false#overview
