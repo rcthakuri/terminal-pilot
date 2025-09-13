@@ -1,0 +1,72 @@
+{
+  "name": "terminal-pilot",
+  "displayName": "Terminal Pilot",
+  "publisher": "rcthakuri",
+  "icon": "assets/terminal-pilot-icon.webp",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.terminalPilot",
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.terminalPilot",
+        "title": "Terminal Pilot: Start Terminals"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Terminal Pilot Configuration",
+      "properties": {
+        "terminal-pilot.terminals": {
+          "type": "object",
+          "description": "Define your terminal configurations. Each key is the terminal name and its value is an object with a command to execute and a flag to indicate if the terminal should be shown. Example:\n\n{\n  \"myTerminal\": {\n    \"command\": \"echo Hello World\",\n    \"show\": true\n  }\n}"
+        },
+        "terminal-pilot.auto-launch": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically launch terminals when VS Code starts."
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "<repository-url>"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.97.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}

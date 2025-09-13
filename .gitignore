@@ -1,0 +1,9 @@
+# Packages
+node_modules
+
+# Distribution
+dist
+
+# Internal
+CHANGELOG.md 
+vsc-extension-quickstart.md
