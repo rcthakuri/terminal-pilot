@@ -4,12 +4,21 @@
   "publisher": "rcthakuri",
   "icon": "assets/terminal-pilot-icon.webp",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.97.0"
   },
   "categories": [
-    "Other"
+   "Programming Languages",
+   "Debuggers",
+   "Keymaps",
+   "Testing",
+   "Snippets"
+  ],
+  "keywords": [
+    "productivity",
+    "vscode terminal",
+    "automation"
   ],
   "activationEvents": [
     "onCommand:extension.terminalPilot",
@@ -41,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "<repository-url>"
+    "url": " https://github.com/rcthakuri/terminal-pilot"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "vscode:prepublish": "yarn run package",
     "compile": "webpack",
